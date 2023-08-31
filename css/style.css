@@ -1,0 +1,131 @@
+:root {
+    --text: #180b28;
+    --background: #faf7fd;
+    --primary: #484250;
+    --secondary: #bd805c;
+    --accent: #b82828;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Didact Gothic", sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+.accent {
+    color: var(--accent);
+}
+.secondary {
+    color: var(--secondary);
+}
+
+.header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 99999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary);
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.logo__img {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--background);
+}
+.logo__text {
+    color: var(--secondary);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    word-wrap: balance;
+}
+.nav {
+    width: 30%;
+    min-width: 400px;
+}
+.nav__ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav__li {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--background);
+    transition: color .15s ease;
+}
+.nav__li:hover{
+    color:var(--accent);
+}
+.nav__li--button {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--accent);
+    padding: 12px;
+    transition: filter .3s ease, color .3s ease;
+}
+.nav__li--button:hover{
+    color: var(--text);
+    filter: brightness(1.2);
+}
+
+.home {
+    padding-top: 80px;
+    position: relative;
+}
+.home__background {
+    filter: contrast(110%) saturate(120%);
+    max-width: 100%;
+    width: 100%;
+}
+.home__background-container {
+    position: relative;
+}
+.home__background-container::after {
+    opacity: 0.65;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    content: " ";
+    transform: translate(-50%, -50%);
+    background-color: var(--primary);
+}
+.home__text {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: clamp(1rem, 3vw, 3rem);
+    color: var(--background);
+}
+.home__h2 {
+    font-family: "Playfair Display", serif;
+    line-height: clamp(1.5rem, 4.5vw, 4.5rem);
+}
+.home__p {
+    font-size: clamp(0.85rem, 2vw, 1.66rem);
+}
+
+
