@@ -119,6 +119,7 @@ a {
 }
 .home__img{
     width: clamp(10rem,30vw,30rem);
+    padding-block:3rem;
 }
 .home__img img{
     max-width: 100%;
