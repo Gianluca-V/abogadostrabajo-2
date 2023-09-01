@@ -1,4 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const accordionItems = document.querySelectorAll(".working-areas__div");
+  
+    accordionItems.forEach((item) => {
+      const descriptionElement = item.querySelector(".working-areas__description");
+  
+      item.querySelector(".working-areas__toggle").addEventListener("click", () => {
+        // Toggle the active class on the description element
+        item.classList.toggle("active");
+        descriptionElement.classList.toggle("active");
+        item.querySelector("#hammer").classList.remove("hammer");
+        setTimeout(()=>{item.querySelector("#hammer").classList.add("hammer");},1);
+        
+
+  
+        // Collapse other open items
+        accordionItems.forEach((otherItem) => {
+          if (otherItem !== item && otherItem.classList.contains("active")) {
+            otherItem.querySelector(".working-areas__description").classList.remove("active");
+            otherItem.classList.remove("active");
+          }
+        });
+      });
+    });
 
     const navLinks = document.querySelectorAll(".nav__li a");
     navLinks.forEach(link => {
@@ -8,11 +31,4 @@ document.addEventListener("DOMContentLoaded", function () {
       })
   })
 
-  window.onresize = ()=>{
-    document.querySelector(".home").style.paddingTop = (20 + document.querySelector(".header").offsetHeight) + 'px';
-  };
-
-  document.querySelector(".nav__toggle").addEventListener("click",()=>{
-    document.querySelector(".nav__ul").classList.toggle("nav__ul--active");
-  });
 });
