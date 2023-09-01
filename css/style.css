@@ -273,6 +273,256 @@ a {
     }
 }
 
+.contact-container{
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-row{
+    -ms-flex-pack: center!important;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.contact-us-cont{
+    margin-top: 3rem!important;
+}
+@media (width <= 1050px) {
+    .contact-us-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2rem;
+    }
+}
+
+.contact-us{
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    padding-left: 20px;
+}
+
+.contact__icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conctact-item-cont{
+    margin-top: 1.5rem!important;
+}
+
+.contact-text-item{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact-text-area{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.button-container{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 100%;
+}
+
+.contact-button{
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 30px;
+    background: #d49943;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 50px;
+    transition: all .3s;
+    border: 2px solid transparent;
+}
+
+.contact-item{
+    max-width: 300px;
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.justify-content-center {
+    justify-content: center!important;
+}
+
+.text-center{
+    text-align: center!important;
+    color: #222222;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 8px;
+}
+
+.contact-part {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.personal-info-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.maps-container{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.personal-info-box .icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #dbdbdb;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 25px;
+    transition: all .3s;
+}
+
+.personal-info-box:hover .icon {
+    color: #fff;
+    background: #d49943;
+    border-color: #d49943;
+}
+
+.personal-info-box .icon:before {
+    position: absolute;
+    content: "";
+    width: 115px;
+    height: 1px;
+    background: #dbdbdb;
+    left: 48px;
+    top: 25px;
+    transition: all .3s;
+}
+
+.personal-info-box:hover .icon:before,
+.personal-info-box:hover .icon:after {
+    background: #d49943;
+}
+
+.personal-info-box .icon:after {
+    position: absolute;
+    content: "";
+    width: 115px;
+    height: 1px;
+    background: #dbdbdb;
+    right: 48px;
+    top: 25px;
+    transition: all .3s;
+}
+
+.personal-info-box p {
+    font-size: 16px;
+    color: #222222;
+    font-weight: 300;
+}
+
+.personal-info-box p a {
+    color: #606060;
+}
+
+.personal-info-box p a:hover {
+    color: #d49943;
+}
+
+.get-touch {
+    max-width: 570px;
+}
+
+.get-touch h3 {
+    color: #000;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+
+.touch-info {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid transparent;
+    margin-bottom: 30px;
+    transition: all .3s;
+    background: #efefef;
+    padding-left: 18px;
+    border-radius: 2px;
+}
+
+.touch-info:hover {
+    border-color: #d49943;
+}
+
+.touch-info:focus {
+    box-shadow: none;
+    border: 1px solid #d49943;
+}
+
+.touch-textarea {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid transparent;
+    padding-top: 10px;
+    transition: all .3s;
+    padding-left: 18px;
+    background: #efefef;
+    border-radius: 2px;
+}
+
+.touch-textarea:hover {
+    border-color: #d49943;
+}
+
+.touch-textarea:focus {
+    box-shadow: none;
+    border: 1px solid #d49943;
+}
+
+.location-box {
+    margin-left: -25px;
+}
 iframe{
     max-width: 100%;
+}
+.location-box h3 {
+    color: #000;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-bottom: 55px;
 }

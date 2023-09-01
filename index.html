@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/font-awesome-5.15.1.min.css"/>
     <link
         href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Playfair+Display:wght@400;600;800&display=swap"
         rel="stylesheet" />
@@ -529,39 +530,79 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <div class="contact__title"></div>
-        <div class="contact__data-container">
-            <div class="contact__data-div"></div>
-            <div class="contact__data-div"></div>
-            <div class="contact__data-div"></div>
+    <section id="contacto">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="padding-top: 120px;">
+            <div class="page-title-content text-center">
+                <h2>Contacto</h2>
+                <a href="index.html">Inicio</a> - <span>Contacto</span>
+            </div>
         </div>
-
-        <form action="" method="post" class="contact__form">
-            <div class="form__group">
-                <label for="" class="form__label"></label>
-                <input type="text" name="" id="" class="form__input" />
+        <div class="contact-part">
+            <div class="contact-container">
+                <div class="contact-row justify-content-center contact__icons">
+                    <div class="contact-item">
+                        <div class="personal-info-box">
+                            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                            <p>Recepción: <a href="callto:+54 011 7369 9788">+54 011 7369 9788</a></p>
+                            <p>Sede Principal: <a href="callto:+54 011 7369 9788">+54 011 7369 9788</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="personal-info-box">
+                            <div class="icon"> <i class="fas fa-envelope"></i></div>
+                            <p>Recepción: <a href="mailto:abogadotrabajo@gmail.com">abogadotrabajo@gmail.com</a></p>
+                            <p>Sede Principal: <a href="mailto:abogadotrabajoSP@gmail.com">abogadotrabajoSP@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="personal-info-box">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <p>Dirección: Av. Corrientes 1389 piso 9 <br>
+                                    CABA, Argentina <br>
+                                    Codigo Postal: 1043</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-row contact-us-cont">
+                    <div class="contact-us">
+                        <div class="get-touch">
+                            <h3>Contáctanos</h3>
+                            <form action="#">
+                                <div class="contact-row contact-item-cont">
+                                    <div class="contact-text-item">
+                                        <input required="" type="text" class="form-control touch-info" id="first-name" name="first-name" placeholder="Nombre">
+                                    </div>
+                                    <div class="contact-text-item">
+                                        <input required="" type="text" class="form-control touch-info" id="last-name" name="last-name" placeholder="Apellido">
+                                    </div>
+    
+                                    <div class="contact-text-item">
+                                        <input required="" type="email" class="form-control touch-info" id="email" name="email" placeholder="Correo Electrónico">
+                                    </div>
+                                    <div class="contact-text-item">
+                                        <input required="" type="text" class="form-control touch-info" id="phone" name="phone" placeholder="Teléfono">
+                                    </div>
+    
+                                    <div class="contact-text-area">
+                                        <textarea required="" class="form-control touch-textarea" id="message:" name="message:" rows="7" placeholder="Mensaje"></textarea>
+                                    </div>
+                                </div>
+    
+                                <div class="button-container">
+                                    <button type="submit" class="contact-button">Enviar <i class="fas fa-long-arrow-alt-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="maps-container">
+                        <div class="location-box">
+                            <h3>Ubicación</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0031282384645!2d-58.38696187144311!3d-34.6038450944415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac429f574ab%3A0x156a0296110778d1!2sAv.%20Corrientes%201389%2C%20C1043%20CABA%2C%20Argentina!5e0!3m2!1sen!2sus!4v1692898061765!5m2!1sen!2sus" width="600" height="345" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form__group">
-                <label for="" class="form__label"></label>
-                <input type="text" name="" id="" class="form__input" />
-            </div>
-            <div class="form__group">
-                <label for="" class="form__label"></label>
-                <input type="text" name="" id="" class="form__input" />
-            </div>
-            <div class="form__group">
-                <label for="" class="form__label"></label>
-                <input type="text" name="" id="" class="form__input" />
-            </div>
-            <div class="form__group form__group--textarea">
-                <label for="" class="form__label"></label>
-                <textarea name="" id="" cols="30" rows="10" class="form__input form__input--textarea"></textarea>
-            </div>
-        </form>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0031282384645!2d-58.38696187144311!3d-34.6038450944415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac429f574ab%3A0x156a0296110778d1!2sAv.%20Corrientes%201389%2C%20C1043%20CABA%2C%20Argentina!5e0!3m2!1sen!2sus!4v1692898061765!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+        </div>
     </section>
 
     <script src="js/main.js"></script>
