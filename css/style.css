@@ -120,6 +120,7 @@ a {
 .home__img{
     width: clamp(10rem,30vw,30rem);
     padding-block:3rem;
+    user-select: none;
 }
 .home__img img{
     max-width: 100%;
@@ -128,6 +129,8 @@ a {
 .home__div{
     font-size: clamp(.9rem,2vw,1.2rem);
     font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
 .home__div:nth-of-type(2){
@@ -145,6 +148,11 @@ a {
 .home__div:nth-of-type(5){
     grid-area: 1 / 6 / 2 / 8;
     margin: auto;
+}
+
+.home__icon{
+    user-select: none;
+    max-width: 6rem;
 }
 
 .home__subtitle{
