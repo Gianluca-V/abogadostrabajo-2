@@ -66,6 +66,9 @@ a {
     width: 30%;
     min-width: 400px;
 }
+.nav__toggle{
+    display: none;
+}
 .nav__ul {
     display: flex;
     justify-content: space-around;
@@ -90,6 +93,44 @@ a {
 .nav__li--button:hover{
     color: var(--text);
     filter: brightness(1.2);
+}
+
+@media (width < 650px){
+    .header{
+        padding-right:0 ;
+    }
+    .nav{
+        min-width: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav__toggle{
+        padding-right: 10px;
+        display: block;
+        font-size: 1.66rem;
+    }
+    .nav__ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap:4rem;
+        position: absolute;
+        top:-15rem;
+        right: 0;
+        background-color: var(--primary);
+        padding: 10px;
+        transition: top .5s ease;
+        max-width: 300%;
+        width: 100%;
+    }
+    .nav__ul--active{
+        top:100%;
+    }
+    .nav__li {
+        display: flex;
+        font-size: clamp(1.25rem, 4vw, 2rem);
+        transition: color .15s ease;
+    }
 }
 
 .home {

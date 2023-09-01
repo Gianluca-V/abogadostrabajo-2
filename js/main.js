@@ -11,4 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   window.onresize = ()=>{
     document.querySelector(".home").style.paddingTop = (20 + document.querySelector(".header").offsetHeight) + 'px';
   };
+
+  document.querySelector(".nav__toggle").addEventListener("click",()=>{
+    document.querySelector(".nav__ul").classList.toggle("nav__ul--active");
+  });
 });
