@@ -273,6 +273,89 @@ a {
     }
 }
 
+.grid-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1px; /* Espacio entre las celdas */
+    margin: auto;
+    margin-block: 5rem;
+    max-width: 100%;
+}
+
+.profile-item {
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Animación de crecimiento suave */
+    transform-origin: center bottom;
+}
+
+.profile-item:hover {
+    transform: scale(1.1); /* Hacer crecer al pasar el cursor */
+    background-color: #fbd4b2; /* Cambiar el color de fondo secundario */
+    color: #f08827; /* Cambiar el color de texto primario */
+}
+
+.profile-image {
+    width: 150px; /* Ancho de la imagen de perfil */
+    height: 145px; /* Alto de la imagen de perfil */
+    border-radius: 100%; /* Hacer la imagen redonda (perfil) */
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px; /* Tamaño del título */
+}
+
+.description {
+    font-size: 16px; /* Tamaño de la descripción */
+}
+
+@media (width <= 768px){
+    .grid-container {
+        flex-direction: column;
+        gap:3rem;
+    }
+    .profile-item {
+        width: 100%;
+    }
+}
+
+.working-areas__title{
+    text-align: center;
+    font-family: var(--playfairDisplay);
+    font-size: 3rem;
+}
+.working-areas__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.working-areas__div{
+    margin: 2rem;
+}
+.working-areas__description{
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: scroll;
+    padding-right: 1rem;
+}
+.working-areas__img svg{
+    width: 150px;
+}
+.working-areas__name{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+@media (width <= 664px) {
+    .working-areas__container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
 .contact-container{
     max-width: 1140px;
     width: 100%;
@@ -294,18 +377,12 @@ a {
 .contact-us-cont{
     margin-top: 3rem!important;
 }
-@media (width <= 1050px) {
-    .contact-us-cont{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:2rem;
-    }
-}
+
 
 .contact-us{
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
+    min-width: 500px;
     padding-left: 20px;
 }
 
@@ -371,9 +448,9 @@ a {
 
 .text-center{
     text-align: center!important;
-    color: #222222;
+    color: var(--text);
     font-size: 30px;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--didactGothic);
     margin-bottom: 8px;
 }
 
@@ -393,7 +470,9 @@ a {
     padding-right: 15px;
     padding-left: 15px;
     flex: 0 0 41.666667%;
-    max-width: 41.666667%;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
 }
 
 .personal-info-box .icon {
@@ -401,7 +480,7 @@ a {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    border: 1px solid #dbdbdb;
+    border: 1px solid var(--text);
     border-radius: 100%;
     display: block;
     text-align: center;
@@ -422,7 +501,7 @@ a {
     content: "";
     width: 115px;
     height: 1px;
-    background: #dbdbdb;
+    background: var(--text);
     left: 48px;
     top: 25px;
     transition: all .3s;
@@ -438,7 +517,7 @@ a {
     content: "";
     width: 115px;
     height: 1px;
-    background: #dbdbdb;
+    background: var(--text);
     right: 48px;
     top: 25px;
     transition: all .3s;
@@ -455,7 +534,7 @@ a {
 }
 
 .personal-info-box p a:hover {
-    color: #d49943;
+    color: var(--primary);
 }
 
 .get-touch {
@@ -525,4 +604,36 @@ iframe{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     margin-bottom: 55px;
+}
+
+@media (width <= 1050px) {
+    .contact-us-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2rem;
+    }
+    .get-touch h3{
+        text-align: center;
+    }
+}
+
+@media (width <= 500px) {
+    .contact-us{
+        min-width: 100%;
+        width: 100%;
+    }
+    .contact-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+    }
+    .contact-text-item{
+        width: 100%;
+        max-width: 100%;
+    }
+
 }
